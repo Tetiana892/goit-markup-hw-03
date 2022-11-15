@@ -19,6 +19,10 @@
   }
  button{
   cursor: pointer;
+  text-align: center;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 4px;
  }
  .container{
   width: 1200px;
@@ -30,7 +34,10 @@
  }
 
 .link {text-decoration: none;}
-.list {list-style: none;}
+.list {list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 body{
 font-family: Roboto,sens-serif;
@@ -99,15 +106,23 @@ color: var(--light-text);
 .hero{
   background-color: var(--last-header-color); 
   text-align: center;
+  height: 600px;
+  width: 1600px;
+  padding: 200px; ;
+  
 }
 
 .hero-title{
+  
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--another-text);
+  margin-bottom: 30px;
+  text-align: center;
+
 }
 
 .hero-btn-pointer {
@@ -119,7 +134,7 @@ color: var(--light-text);
   text-transform: uppercase;
   letter-spacing: 0.06em;
   color: var(--another-text);
-  cursor: pointer;
+  padding: 10px 32px;
 }
 .hero-btn-pointer:hover,
 .hero-btn-pointer:focus{
@@ -130,6 +145,10 @@ color: var(--light-text);
 /*----Terms-----*/
 .terms{
   background-color:var(--primari-header-color);
+  padding: 94px 215px;
+}
+.terms-list.list{
+  display: inline-block;
 }
 .terms-title{
     font-weight: 700;
@@ -137,48 +156,73 @@ color: var(--light-text);
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .terms-item{
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     color: var(--second-text);
+    margin-bottom: 118px;
 }
 /*----About-----*/
 .about{
   background-color: var(--primari-header-color);
 }
+
 .about-title{
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.about-items{
+  margin-bottom: 94px;
+  display: inline-block;
 }
 
 /*----Comand-----*/
 .comand{
   background-color: var(--comand-header-color);
+  padding: 94px 215px;
 }
 .comand-pre-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.25;
     letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
 }
 .comand-items{
 background-color: var(--primari-header-color);
+border: 1px;
+border-radius: 0 0 4px 4px;
+box-shadow: 0 1px 3px rgba(0,0,0,0,0.12), 0 1px 1px 
+rgba(0, 0, 0, 0.14),0 2px 1px rgba(0, 0,0, 0.2);
+text-align: center;
+display: inline-block;
+
+
 }
 .comand-title{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.03em;
+    margin-top: 30px;
+    margin-bottom: 10px;
+   
 }
 .comand-post-title{
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--second-text);
+  margin-bottom: 30px;
+
 }
 /*----Works button-----*/
  
@@ -188,6 +232,10 @@ background-color: var(--primari-header-color);
 background: var(--accent-color);
 color:var(--another-text);
 }
+.work-btn{
+  display: inline-block;
+}
+
 
 .work-btn-pointer{
    font-family: Roboto,sens-serif;
@@ -197,14 +245,17 @@ color:var(--another-text);
     letter-spacing: 0.03em;
     background: var(--comand-header-color);
     color: var(--light-text);
-    cursor: pointer;
-    }
+    padding: 6px 22px;
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
 
 
 /*----Works-----*/
 .work-items{
   background-color:var(--primari-header-color);
-
+display: inline-block;
+padding-bottom: 94px;
 }
 .works-list .list{
   box-sizing: border-box;
@@ -215,6 +266,7 @@ color:var(--another-text);
   top: 696px;
   background-color: var(--primari-header-color);
   border: 1px solid #EEEEEE;
+
 }
 
 .work-title{
@@ -223,12 +275,14 @@ color:var(--another-text);
     line-height: 2;
     letter-spacing: 0.03em;
     color: var(--light-text);
+    margin-top: 20px;
 }
 .work-text{
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--second-text);
+    margin-top: 4px;
 }
 
 /*----Footer-----*/

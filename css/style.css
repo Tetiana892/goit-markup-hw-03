@@ -249,6 +249,9 @@ margin-left: auto;
   background-color: var(--comand-header-color);
   padding: 94px 215px;
 }
+.comand-list.list{
+  display: flex;
+}
 .comand-pre-title{
     font-weight: 700;
     font-size: 36px;
@@ -258,17 +261,16 @@ margin-left: auto;
     margin-bottom: 50px;
 }
 .comand-items{
-display: inline-block;
 background-color: var(--primari-header-color);
-border: 1px;
 border-radius: 0 0 4px 4px;
 box-shadow: 0 1px 3px rgba(0,0,0,0,0.12), 0 1px 1px 
 rgba(0, 0, 0, 0.14),0 2px 1px rgba(0, 0,0, 0.2);
 text-align: center;
-display: inline-block;
-
-
 }
+.comand-items:not(:last-child){
+margin-right: 30px;
+}
+
 .comand-title{
     font-weight: 500;
     font-size: 16px;
@@ -298,11 +300,9 @@ color:var(--another-text);
   display: flex;
 }
 .work-btn{
-  display: inline-block;
   margin-right: 8px;
   justify-content: center;
 }
-
 
 .work-btn-pointer{
    font-family: Roboto,sens-serif;
@@ -320,7 +320,7 @@ color:var(--another-text);
 
 /*----Works-----*/
 
-.works-list .list {
+.work-lists.list {
   background-color: var(--primari-header-color);
   display: flex;
   flex-wrap: wrap;
@@ -328,12 +328,11 @@ color:var(--another-text);
 
 .work-items{
 background-color:var(--primari-header-color);
-width: 370px;
-box-sizing: border-box;
+width:370px;
 border: 1px solid var(--work-bg-color);
 margin-right: 30px;
 margin-bottom: 30px;
-display: inline-block;
+
 }
 .work-items:nth-child(3n){
   margin-right: 0;

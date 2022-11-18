@@ -225,14 +225,18 @@ flex-basis: calc((100%-120px)/4);
 }
 .about-list.list{
   display: flex;
+ 
 }
 .about-title{
+  display: block;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
+
   margin-bottom: 50px;
+  padding-top: var(--card-set-gap);
 }
 .about-items{
 padding-bottom: var(--card-set-gap);
@@ -244,20 +248,22 @@ padding-bottom: var(--card-set-gap);
 
 /*----Comand-----*/
 .comand{
-  background-color: var(--comand-header-color);
+background-color: var(--comand-header-color);
 }
 .comand-list.list{
   display: flex;
-  padding-top: var(--card-set-gap);
   padding-bottom: var(--card-set-gap);
 }
+
 .comand-pre-title{
+  margin-bottom: 50px;
+  padding-top: var(--card-set-gap);
+  display: block;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.25;
     letter-spacing: 0.03em;
     text-align: center;
-    margin-bottom: 50px;
 }
 .comand-items{
 background-color: var(--primari-header-color);

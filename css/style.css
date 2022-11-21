@@ -95,6 +95,7 @@ color: var(--light-text);
 
 
 /*----Site nav-----*/
+
 .main-nav{
   display: flex;
   align-items: center;
@@ -103,14 +104,17 @@ color: var(--light-text);
   display: flex;
   margin-left: 93px;
 }
+.section-header-nav{
+ padding-top: 24px;
+ padding-bottom: 25px;
+}
+
 .header-nav.link+.link{
   margin-left: 50px;
 }
 .header-nav .link{
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
+  
  font-weight: 500;
  font-size: 14px;
  line-height: 1.14;
@@ -143,8 +147,7 @@ color: var(--light-text);
 }
 .aut-nav.link{
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+
 }
 .aut-nav.link+.link{
   margin-left: 50px;
@@ -171,8 +174,7 @@ color: var(--light-text);
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--another-text);
-  
-}
+  }
 
 .hero-btn-pointer {
   padding: 10px 32px;
@@ -185,6 +187,8 @@ color: var(--light-text);
   letter-spacing: 0.06em;
   color: var(--another-text);
   background-color: var(--accent-color-bt);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 .hero-btn-pointer:hover,
 .hero-btn-pointer:focus{
@@ -207,7 +211,7 @@ color: var(--light-text);
   }
     
 .terms-list.list{
- flex-basis: calc((100%-120px)/4);
+ flex-basis: calc( (100% - 90px ) / 4 );
 }
 
 .terms-list.list:not(:last-child){
@@ -316,14 +320,14 @@ margin-right: 30px;
 
 /*----Works button-----*/
 
-.section-work-btn{
- margin-bottom: 50px;
- padding-top: var(--card-set-gap);
+.section-work{
+padding-top: var(--card-set-gap);
+padding-bottom: var(--card-set-gap);
 }
 
 .work-btn.list {
   display: flex;
-}
+  }
  
 .work-btn-pointer:hover,
 .work-btn-pointer:focus{
@@ -333,7 +337,9 @@ color:var(--another-text);
 
 .work-btn{
   justify-content: center;
-}
+  margin-bottom: 50px;
+  }
+
 
 .work-btn:not(:last-child){
    margin-right: 8px;
@@ -348,15 +354,13 @@ color:var(--another-text);
     line-height: 1.62;
     letter-spacing: 0.03em;
     background: var(--comand-header-color);
+    box-shadow: 0 3px 1px rgba(0,0, 0, 0.1) 0 1px 2px 
+    rgba(0, 0, 0, 0.8) 0 2px 2px rgba(0,0, 0, 0.12);
     color: var(--light-text);
     }
  
     
 /*----Works-----*/
-
-.section-menu{
- padding-bottom: var(--card-set-gap);
-}
 
 .works-menu-list {
   display: flex;

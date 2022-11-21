@@ -193,17 +193,19 @@ color: var(--light-text);
 }
 
 /*----Terms-----*/
-.terms{
-  background-color:var(--primari-header-color);
+
+.section-terms {
+
+  padding-bottom: 0;
+  padding-top: var(--card-set-gap);
+
+  background-color: var(--primari-header-color);
 }
+
 .terms.list{
   display:flex;
   }
     
-.section-terms{
-  padding-bottom: 0;
-  padding-top: var(--card-set-gap);
-}
 .terms-list.list{
  flex-basis: calc((100%-120px)/4);
 }
@@ -291,9 +293,12 @@ text-align: center;
 .comand-items:not(:last-child){
 margin-right: 30px;
 }
+.comand-foto{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 
 .comand-title{
-   margin-top: 30px;
    margin-bottom: 10px;
 
     font-weight: 500;
@@ -303,8 +308,6 @@ margin-right: 30px;
     }
 
 .comand-post-title{
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -312,6 +315,15 @@ margin-right: 30px;
   }
 
 /*----Works button-----*/
+
+.section-work-btn{
+ margin-bottom: 50px;
+ padding-top: var(--card-set-gap);
+}
+
+.work-btn.list {
+  display: flex;
+}
  
 .work-btn-pointer:hover,
 .work-btn-pointer:focus{
@@ -319,15 +331,12 @@ background: var(--accent-color);
 color:var(--another-text);
 }
 
-.work-btn.list{
-  display: flex;
-  margin-bottom: 50px;
-  padding-top:var(--card-set-gap);
+.work-btn{
+  justify-content: center;
 }
 
-.work-btn{
-  margin-right: 8px;
-  justify-content: center;
+.work-btn:not(:last-child){
+   margin-right: 8px;
 }
 
 .work-btn-pointer{
@@ -345,24 +354,27 @@ color:var(--another-text);
     
 /*----Works-----*/
 
+.section-menu{
+ padding-bottom: var(--card-set-gap);
+}
+
 .works-menu-list {
   display: flex;
   flex-wrap: wrap;
- margin-left: -30px;
- margin-bottom: -30px;
+  margin-left: -30px;
+  margin-top: -30px;
   
   list-style: none;
-  padding-bottom: var(--card-set-gap);
   background-color: var(--primari-header-color);
   }
 
 .work-items{
   flex-basis: calc( (100% / 3 ) - 30px );
-   margin-left: 30px;
-   margin-bottom: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
 
   background-color: var(--primari-header-color);
-  }
+ }
 
 .work-elemet {
   border: 1px solid var(--work-bg-color);

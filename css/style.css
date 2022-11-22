@@ -350,7 +350,7 @@ color:var(--another-text);
 .work-btn-pointer{
     padding: 6px 22px;
 
-   font-family: Roboto,sens-serif;
+   font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -433,7 +433,7 @@ color:var(--another-text);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color:var(--another-text);
+  color:rgba(255, 255, 255, 0.6);
 }
 .footer-address.link{
   margin-top: 28px;
@@ -443,3 +443,7 @@ color:var(--another-text);
   color: var(--accent-color);
 }
   
+.footer-items-addres.link:hover,
+.footer-items-addres.link:focus{
+  color: var(--accent-color);
+}
